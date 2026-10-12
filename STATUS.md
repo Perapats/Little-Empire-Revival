@@ -12,16 +12,15 @@ The playable prototype is estimated at **about 30%**. This is a rough planning e
 - The test city rendered a House and Barracks; the Barracks recruitment panel opened.
 - One Footman completed a synthetic recruitment timer and collection flow. The isolated test state retained the troop.
 - After a client restart and re-registration, the test city and Hero panel loaded.
-- A separate test profile preloaded with a synthetic troop displayed it in the Castle Troops screen.
+- After recruitment, collection, a data-preserving client restart, and re-registration, the same isolated profile displayed one Footman in Castle Troops. This used a synthetic Castle probe and synthetic ArmyData; it verifies the roster read/display path only.
 - The existing local backend regression suite passed 8 tests.
 
 ## Incomplete or unverified
 
 - The tutorial does not advance after the Hourglass confirmation.
-- The Castle Troops count has not been verified after recruitment, collection, and reconnect in the same profile.
+- Formation persistence and battle entry are unverified; server-validated combat and persistent battle results are incomplete.
 - Original resource balances, costs, rewards, and unit balance have not been established.
 - Authentication and independent player accounts are incomplete.
-- Server-validated combat and persistent battle results are incomplete.
 - Arena, Conquest, multiplayer synchronization, and public deployment are not implemented.
 - Testing covers a limited Android emulator configuration; broader device compatibility is unknown.
 
@@ -34,5 +33,3 @@ The playable prototype is estimated at **about 30%**. This is a rough planning e
 ## Release status
 
 This is a local prototype, not a complete or production-ready game. The alpha baseline is proposed and untagged. Synthetic test values are not presented as official game rules.
-
-
