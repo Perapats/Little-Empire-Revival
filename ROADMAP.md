@@ -2,15 +2,15 @@
 
 Roadmap items move to complete only after the client-visible behavior and relevant local state have been verified. Temporary test rules will remain labeled as synthetic.
 
-## Current milestone: local city and recruitment prototype
+## Current milestone: battle entry and result prototype
 
-**In progress.** Visitor registration, test-city loading, Barracks access, and one synthetic Footman collection have been exercised locally. The next verification is to connect that collected troop to the Castle roster in the same profile after reconnecting.
+**In progress.** Visitor registration, test-city loading, Barracks access, and one synthetic Footman collection have been exercised locally. The same isolated profile also displayed one Footman in Castle Troops after a data-preserving restart and re-registration, using synthetic Castle data; this verifies roster display only. Formation persistence, battle entry, and battle results remain unverified.
 
 ## Planned milestones
 
-1. **Complete the local troop loop**
-   - Verify that a collected troop remains visible in the Castle roster after reconnect.
-   - Trace and test one battle request using evidence from the client.
+1. **Verify the basic battle loop**
+   - Trace a battle request using evidence from the client.
+   - Verify battle entry, result handling, and persistence using the emulator and isolated test data.
 2. **Restore tutorial progression**
    - Identify why the Hourglass confirmation does not advance the tutorial.
    - Verify the complete tutorial path without relying on a direct-to-city test bypass.
@@ -30,5 +30,3 @@ Roadmap items move to complete only after the client-visible behavior and releva
 ## Out of scope for this documentation repository
 
 This repository is not a place to publish implementation code, APKs, game assets, saves, secrets, or private technical logs.
-
-
