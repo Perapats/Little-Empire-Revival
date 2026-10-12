@@ -12,21 +12,18 @@ This is a proposed documentation baseline for a local prototype. It is not a com
 - The tested city rendered its House and Barracks. The Barracks selection and recruitment panel were opened.
 - One Footman followed a synthetic production timer and collection flow. The test server recorded the collected troop in isolated local test data.
 - After a client restart and re-registration, the isolated city and Hero panel loaded.
-- In a separate test profile with a preloaded synthetic troop, the Castle Troops screen displayed that troop.
+- After recruitment, collection, a data-preserving client restart, and re-registration, the same isolated profile displayed one Footman in Castle Troops. This used a synthetic Castle probe and synthetic ArmyData, and verifies the roster read/display path only.
 - The existing local backend regression suite passed 8 tests.
 
 ### Limitations
 
 - The tutorial still fails to advance after its Hourglass confirmation.
-- The Castle roster display has not yet been verified after recruiting and collecting the troop in that same profile.
 - Recruitment timing and troop data used in tests are synthetic, not recovered official balance.
-- Authentication, the full economy, authoritative combat, Arena, Conquest, multiplayer, and public deployment are incomplete.
+- Formation persistence and battle entry remain unverified.
+- Authentication, the full economy, server-validated combat and persistent battle results, Arena, Conquest, multiplayer, and public deployment are incomplete.
 
 ### Compatibility
 
 - **Revival Server:** `0.1.0-alpha` proposed.
 - **Original Camel Games client:** `1.26.4`, tracked separately.
 - **Verified test environment:** Android 9 / API 28, x86 Android emulator, software rendering.
-
-
-
