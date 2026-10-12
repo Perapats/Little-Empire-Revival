@@ -4,7 +4,7 @@ Roadmap items move to complete only after the client-visible behavior and releva
 
 ## Current milestone: battle entry and result prototype
 
-**In progress.** Visitor registration, test-city loading, Barracks access, and one synthetic Footman collection have been exercised locally. The same isolated profile also displayed one Footman in Castle Troops after a data-preserving restart and re-registration, using synthetic Castle data; this verifies roster display only. Formation persistence, battle entry, and battle results remain unverified.
+**In progress.** Visitor registration, test-city loading, Barracks access, and one synthetic Footman collection have been exercised locally. The same isolated profile displayed one Footman in Castle Troops after re-registration. The Castle Formation confirmation was then stored by the local server and returned the client to the city. These roster and formation checks use synthetic data; saved-slot retrieval, battle entry, and battle results remain unverified.
 
 ## Planned milestones
 
