@@ -19,7 +19,7 @@ This is a proposed documentation baseline for a local prototype. It is not a com
 
 - The tutorial still fails to advance after its Hourglass confirmation.
 - Recruitment timing and troop data used in tests are synthetic, not recovered official balance.
-- Formation persistence and battle entry remain unverified.
+- A basic Castle formation commit is verified on synthetic local data; saved-slot retrieval and battle entry remain unverified.
 - Authentication, the full economy, server-validated combat and persistent battle results, Arena, Conquest, multiplayer, and public deployment are incomplete.
 
 ### Compatibility
@@ -27,3 +27,12 @@ This is a proposed documentation baseline for a local prototype. It is not a com
 - **Revival Server:** `0.1.0-alpha` proposed.
 - **Original Camel Games client:** `1.26.4`, tracked separately.
 - **Verified test environment:** Android 9 / API 28, x86 Android emulator, software rendering.
+
+## Castle formation storage milestone - 2026-10-13
+
+### Verified
+
+- The original 1.26.4 client loaded one synthetic Footman into Castle Formation.
+- The local server stored the submitted formation, and the client returned to the city twice without a crash.
+- The backend test suite passed 12 tests, including formation persistence and invalid-input checks.
+- This milestone covers only local formation storage on synthetic data. It does not verify saved-slot retrieval, battle entry, combat, tutorial completion, or original game balance. Revival Server 0.1.0-alpha remains proposed and untagged.
