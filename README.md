@@ -13,7 +13,7 @@ These are separate version numbers. The Revival Server version does not change o
 
 ## Current status
 
-The local prototype has verified a narrow city and recruitment loop in an Android emulator: the client can register with the local replacement server, load a test city, and complete one synthetic Footman recruitment and collection. A separate test also verified that a preloaded troop can appear in the Castle roster screen.
+The local prototype has verified a narrow city and recruitment loop in an Android emulator: the client can register with the local replacement server, load a test city, and complete one synthetic Footman recruitment and collection. The same synthetic profile displayed its Footman in Castle Troops, and the Castle Formation confirmation was stored by the local server before the client returned to the city. Battle entry and the tutorial remain unverified.
 
 The playable-prototype progress is estimated at **about 30%**. This is a rough planning estimate, not a measured or verified completion percentage. The tutorial, original economy, complete battle loop, multiplayer, and other major systems are unfinished.
 
